@@ -1,0 +1,50 @@
+/*
+  =  TECLADO MATRICIAL 4x4 KEYPAD COM ARDUINO   =
+  ===============================================
+  == BLOG DA ROBOTICA - www.blogdarobotica.com ==
+  ===============================================
+  Autor: Carol Correia Viana
+  E-mail: contato@blogdarobotica.com
+  Facebook: facebook.com/blogdarobotica
+  Instagram:@blogdarobotica
+  YouTube: youtube.com/user/blogdarobotica
+  ===============================================
+  == CASA DA ROBOTICA - www.casadarobotica.com ==
+  ===============================================
+  Facebook: facebook.com/casadaroboticaoficial
+  Instagram:@casadarobotica
+  ===============================================
+*/
+
+#include <Keypad.h> //Biblioteca para uso de teclados matriciais 
+
+const byte numLinhas = 4; //Quantidade de linhas do teclado
+const byte numColunas = 4; //Quantidade de colunas do teclado
+
+//Matriz de caracteres referente aos botões do teclado
+char teclasMatriz[numLinhas][numColunas] = {
+  {'1', '2', '3', '4'},
+  {'5', '6', '7', '8'},
+  {'9', '0', '*', '+'},
+  {'#', '$', '%', '@'}
+};
+
+byte pinosLinhas[numLinhas] = {6, 5, 4, 3}; //Pinos das linhas
+byte pinosColunas[numColunas] = {8, 9, 10, 11}; //Pinos das Colunas
+
+//Cria um objeto do tipo Keypad
+Keypad meuteclado = Keypad(makeKeymap(teclasMatriz), pinosLinhas, pinosColunas, numLinhas, numColunas);
+
+void setup() {
+  Serial.begin(9600); //Inicia a comunicação serial
+  Serial.println("Aperte um botão..."); //Imprime mensagem no monitor serial
+}
+
+void loop() {
+  char pressionado = meuteclado.getKey(); ///Verifica se alguma tecla foi pressionada
+
+  if (pressionado) { //Se alguma tecla foi pressionada
+    Serial.print("Botão pressionado: "); //Imprime mensagem no monitor serial
+    Serial.println(pressionado); //Imprime tecla pressionada
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "main": {
+    "id": "2bfcbb03a548ccb5",
+    "type": "split",
+    "children": [
+      {
+        "id": "167ed3ce416131de",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9a343a10ed2d5774",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Aula03_TecladoDisplay/TecladoMatricial/aula15_teclado_matricial_membrana_m2.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "aula15_teclado_matricial_membrana_m2"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "942dafefcb8e9ccb",
+    "type": "split",
+    "children": [
+      {
+        "id": "396ccc6dd28894dc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d5569855551f87d2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de arquivos"
+            }
+          },
+          {
+            "id": "17c1282140e94ca2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Procurar"
+            }
+          },
+          {
+            "id": "935daa0ca20a893a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "dc488eed80930b81",
+    "type": "split",
+    "children": [
+      {
+        "id": "c66aa9ec6e2c31d8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4583367d6fd8027b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Aula03_TecladoDisplay/TecladoMatricial/aula15_teclado_matricial_membrana_m2.pdf",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Links inversos para aula15_teclado_matricial_membrana_m2"
+            }
+          },
+          {
+            "id": "30b4838b1f1d9a52",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Aula03_TecladoDisplay/TecladoMatricial/aula15_teclado_matricial_membrana_m2.pdf",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Links de saída para aula15_teclado_matricial_membrana_m2"
+            }
+          },
+          {
+            "id": "a90ed7aebe032b8b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "67bb6b773481da3c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Aula03_TecladoDisplay/TecladoMatricial/aula15_teclado_matricial_membrana_m2.pdf",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Sumário de aula15_teclado_matricial_membrana_m2"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false
+    }
+  },
+  "active": "9a343a10ed2d5774",
+  "lastOpenFiles": [
+    "Aula03_TecladoDisplay/TecladoMatricial/Diagrama chaves.png",
+    "Aula03_TecladoDisplay/DisplaySerial/Módulo de exibição lcd 20x4 2004 com adaptador de interface serial iic_i2c iic i2c twi serial 2004 20x4 módulo lcd escudo para arduino r3 - AliExpress 502.pdf",
+    "Aula03_TecladoDisplay/DisplaySerial/I2C Liquid Crystal Displays _ Arduino Project Hub.pdf",
+    "Aula03_TecladoDisplay/DisplaySerial/Como utilizar o display LCD 16×02 com módulo I2C no Arduino - Blog da Robótica.pdf",
+    "Aula03_TecladoDisplay/DisplaySerial/Como usar o módulo I2C com Arduino e display LCD 16x2 - Arduino e Cia.pdf",
+    "Aula02_DispositivosHardware/Sistemas embarcados aplicados I - Configuração_.pdf",
+    "Aula02_DispositivosHardware/UNO-TH_Rev3e_sch.pdf",
+    "Aula02_DispositivosHardware/ATmega328P_Datasheet.pdf"
+  ]
+}
