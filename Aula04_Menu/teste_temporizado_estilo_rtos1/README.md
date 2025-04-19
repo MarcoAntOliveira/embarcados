@@ -5,6 +5,9 @@ Este projeto implementa um sistema de temporizações escalonadas utilizando a f
 ## Objetivo
 Simular um RTOS , escalonando a ativação dos leds de acordo com passar do tempo
 
+## Imagem do circuito
+![implementação circuito no tinkercad](image.png)
+
 ## Funcionamento
 
 - O sistema baseia-se em um temporizador de **5 milissegundos**.

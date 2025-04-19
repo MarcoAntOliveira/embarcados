@@ -6,7 +6,7 @@ Este projeto implementa um **menu interativo usando um display LCD 16x2**, contr
 
 ## 📸 Imagem do Circuito
 
-![!\[> !\\[Circuito Montado\\](./104521f6-1da5-468c-be70-a5cdb4309f21.png)\](<Aula04_Menu/menu_e_evitar_debouncing1/MENU e EVITAR DEBOUNCING.png>)](<MENU e EVITAR DEBOUNCING.png>)
+![imagem do circuito](image.png)
 
 ---
 
