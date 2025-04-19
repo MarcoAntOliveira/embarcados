@@ -16,5 +16,6 @@ pio run --target upload
 pio device monitor
 pio device monitor --port /dev/ttyUSB0
 
-
 ```
+### Menu para controle dos leds
+
