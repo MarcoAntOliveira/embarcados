@@ -1,0 +1,5 @@
+.pio
+platformio.ini
+amb
+kivy-deps-build/
+

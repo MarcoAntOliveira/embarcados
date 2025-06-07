@@ -6,7 +6,7 @@ Este projeto implementa um **menu interativo usando um display LCD 16x2**, contr
 
 ## 📸 Imagem do Circuito
 
-![imagem do circuito](image.png)
+
 
 ---
 

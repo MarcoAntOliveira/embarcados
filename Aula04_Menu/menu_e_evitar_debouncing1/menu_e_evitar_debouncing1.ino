@@ -11,12 +11,14 @@
 #define L_AZ  	A4
 #define L_VM  	A3
 #define L_VD  	A2
+#define L_OR  	A0
+#define L_WH  	A1
 
 int menu = 1;       		//Variável para selecção da página.
 int LedVerdePisca = 0;     	//Variável para liberar o led verde para piscar
 
 
-// Definir pinos ligados ao display conforme LiquidCrystal(rs, enable, d4, d5, d6, d7) 
+// Definir pinos ligados ao display conforme LiquidCrystal(rs, enable, d4, d5, d6, d7)
 LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
 //LiquidCrystal lcd(8, 9, 4, 5, 6, 7); // para a placa lcd keypad shield
 
@@ -34,20 +36,22 @@ void setup() {
   pinMode(L_AZ, OUTPUT);
   pinMode(L_VM, OUTPUT);
   pinMode(L_VD, OUTPUT);
+  pinMode(L_OR, OUTPUT);
+  pinMode(L_WH, OUTPUT);
   // nos pinos do display a biblioteca se encarrega de acertar
   AtualizaMenu();			// chama função que atualiza o Menu
 }
 
 void loop() {
-  
-  
+
+
   if (!digitalRead(botao_p_baixo)){ // testa se os botões vão para nível zero!!!
     menu++;					// incrementa tela de menu
     AtualizaMenu();			// chama função que atualiza o Menu
     delay(100);				// aguarda um tempo para soltar a tecla
     while (!digitalRead(botao_p_baixo)); // espera soltar a tecla
   }
-  
+
   if (!digitalRead(botao_p_cima)){ // testa se os botões vão para nível zero!!!
     menu--;					// decrementa tela de menu
     if(menu>5) menu=5;
@@ -55,22 +59,23 @@ void loop() {
     delay(100);				// aguarda um tempo para soltar a tecla
     while(!digitalRead(botao_p_cima)); // espera soltar a tecla
   }
-  
+
   if (!digitalRead(botao_seleciona)){ // testa se os botões vão para nível zero!!!
     ExecutaAcao();			// chama função que executa ação
     AtualizaMenu();			// chama função que atualiza o Menu
     delay(100);				// aguarda um tempo para soltar a tecla
     while (!digitalRead(botao_seleciona)); // espera soltar a tecla
   }
-  
+
   if(LedVerdePisca){
     digitalWrite(L_VD, !digitalRead(L_VD));
     delay(100);
-  } 
+  }
+
 }
 
 
-  
+
   void AtualizaMenu() {
   switch (menu) {
     case 0:						// se a seleção é menor do que a primeira tela
@@ -128,7 +133,7 @@ void ExecutaAcao() {
       break;
     case 31:
       acao31();
-      break;    
+      break;
   }
 }
 
@@ -153,7 +158,7 @@ void acao3() {
   lcd.print("Executando3");
   menu=31;			// seleciona submenu
   lcd.setCursor(0, 1);
-  lcd.print("Vai p submenu31");  
+  lcd.print("Vai p submenu31");
   delay(1500);
 }
 void acao4() {
@@ -177,4 +182,4 @@ void acao31() {
   lcd.print("Executando31");
   digitalWrite(L_VM, !digitalRead(L_VM));
   delay(1500);
-} 
+}
