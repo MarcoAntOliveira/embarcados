@@ -4,7 +4,7 @@
 ```shell
 
 //inicializar projeto
-pio project init --board uno
+  pio project init --board uno
 //compilar
 pio run
 
